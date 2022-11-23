@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Work+Sans:wght@100;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* MENU */
+
+.contenedor-header{
+    background-color: rgb(0, 1, 37);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.contenedor-header header{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-weight: bold;
+    font-family: "Work Sans";
+    font-size: 30px;
+    color: rgb(253, 101, 0);
+    text-decoration: none;
+}
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: none;
+    color: white;
+    margin: 0px 15px;
+    padding: 3px;
+    transition: .4s;
+    text-decoration: none;
+}.contenedor-header header nav ul li a:hover {
+    color: rgb(253, 101, 0);
+}
+.nav-responsive {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: none;
+}
+/* INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url(fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.inicio .banner {
+    padding: 15px;
+    background-color: rgb(0, 1, 37);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+}
+.inicio .banner img{
+    margin-top: 40px;
+    border: 3px solid rgb(253, 101, 0);
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .banner h1{
+    margin-top: 30px;
+    font-size: 42px;
+    font-family: "Work Sans";
+}
+.inicio .banner h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.inicio .banner .redes-sociales a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(253, 101, 0);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .banner .redes-sociales a:hover{
+    background-color: rgb(253, 101, 0);
+}
+/*SOBRE MÍ*/
+.sobremi {
+    background-color: rgb(0, 1, 37);
+    color: white;
+    padding: 50px 20px;
+}.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 40px;
+    font-family: "Work Sans";
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p span{
+    color: white;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: "Work Sans";
+    margin-bottom: 15px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 10px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: rgb(253, 101, 0);
+    width: 130px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(253, 101, 0);
+    z-index: -1;
+    transition: .8s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*SKILLS*/
+.skills {
+    background-color: rgb(0, 1, 37);
+    color: white;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills .contenido-seccion h3{
+    font-size: 40px;
+    font-family: "Work Sans";
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .contenido-seccion p span{
+    color: white;
+    font-weight: bold;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+}
+.skills  h3{
+    font-size: 28px;
+    font-family: "Work Sans";
+    margin-bottom: 15px;
+}
+.skills .fila .col ul{
+    list-style: none;
+}
+.skills .fila .col ul li{
+    margin: 10px 0;
+}
+.skills .fila .col ul li strong{
+    font-size: 20px;
+    display:inline-block;
+    color: rgb(253, 101, 0);
+    width: 130px;
+}
+.skills .fila i{
+    font-size: 30px;
+}
+
+/*CONTACTO*/
+.contacto{
+    background-color: rgb(0, 1, 37);
+    color: white;
+    padding: 50px 0;
+}
+.contenido .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 40px;
+    font-family: "Work Sans";
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.ontacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(0, 2, 73);
+    font-weight: bold;
+    color: orange;
+    font-size: 18px
+}
