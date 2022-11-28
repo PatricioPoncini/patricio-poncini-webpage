@@ -261,7 +261,8 @@ html {
     font-size: 18px
 }
 footer{
-    background-color: rgb(0, 2, 73);
+    background: linear-gradient(to top, rgba(120, 123, 124, 0.5), rgba(30, 35, 38, 1)),
+    url(contacto.jpg);
     color: white;
     padding: 50px 0 30px 0;
     text-align: center;
