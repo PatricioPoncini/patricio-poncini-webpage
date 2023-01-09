@@ -1,5 +1,5 @@
 let menuVisible = false;
-function mostrarOcultarMenu(){
+function showHideMenu(){
     if(menuVisible){
         document.getElementsById("nav").classList="";
         menuVisible = false;
@@ -9,7 +9,7 @@ function mostrarOcultarMenu(){
     }
 }
 
-function seleccionar(){
+function select(){
     document.getElementById("nav").classList="";
     menuVisible = false;
 }
